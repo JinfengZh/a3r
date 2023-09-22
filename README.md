@@ -22,14 +22,16 @@ A graphical representation of an argumentation procedure in a recommendation sce
 
 * On the netflix dataset
 ```
-python3 main.py --name 'netflix' 
-* On the movielens100k dataset
+python3 main.py --name 'netflix'
 ```
+* On the movielens100k dataset
+ ``` 
 python3 main.py --name 'movielens100k' 
 ```
 * On the mivielendevelop dataset
 ```
-python3 main.py --name 'mivielendevelop' 
+python3 main.py --name 'mivielendevelop'
+```
 * On the book dataset
 ```
 python3 main.py --name 'book' 
