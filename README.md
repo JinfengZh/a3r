@@ -13,6 +13,9 @@ A graphical representation of an argumentation procedure in a recommendation sce
 ## Major steps
 
 ![The major steps A3R](https://github.com/JinfengZh/a3r/blob/master/Figures/dsaa_steps.png)
+## Rating aggregation
+
+![The major steps A3R](https://github.com/JinfengZh/a3r/blob/master/Figures/dsaa_cube.png)
 ## Structure of files
 * data_loader.py, reads the training and test dataset, model_book.py contains the model for the book dataset, model_movie contains the model for the movie dataset, train.py controls the training process, utilities.py contains functions that are used in the training process.
 * For each dataset, we have created files for further research. In each folder, the ``ready_to_use'' folder contains the ready_to_use training and test dataset; the ``original_data'' folder contains the original dataset before pre-processing; the ``models'' folder contains the model parameters for each hyperparameter combination that we have explored; the ``data_generation.ipynb'' shows the data pre-processing; the ``graph.ipynb'' shows the clustering results are obtained.
