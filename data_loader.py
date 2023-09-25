@@ -19,8 +19,8 @@ def read(args):
 
 def read_ratings(name):
     if name == 'book':
-        trainset = pd.read_csv(str(name) + '/train.csv')
-        testset = pd.read_csv(str(name) + '/test.csv')
+        trainset = pd.read_csv(str(name) + '/ready_to_use'+ '/train.csv')
+        testset = pd.read_csv(str(name)+ '/ready_to_use' + '/test.csv')
         trainset = traite_train_test(trainset)
         testset = traite_train_test(testset)
         hehe_test = trainset.copy()
@@ -36,8 +36,8 @@ def read_ratings(name):
     
     else:
         if name == 'netflix':
-            trainset = pd.read_csv(str(name) + '/train.csv')
-            testset = pd.read_csv(str(name) + '/test.csv')
+            trainset = pd.read_csv(str(name) + '/ready_to_use' + '/train.csv')
+            testset = pd.read_csv(str(name) + '/ready_to_use' + '/test.csv')
             trainset['user_rating'] = (trainset['user_rating'] + 1) * 2 + 1
             testset['user_rating'] = (testset['user_rating'] + 1) * 2 + 1
             trainset = traite_train_test(trainset)
@@ -51,8 +51,8 @@ def read_ratings(name):
             df_empty.index = range(len(df_empty))
         
         else:
-            trainset = pd.read_csv(str(name) + '/train.csv')
-            testset = pd.read_csv(str(name) + '/test.csv')
+            trainset = pd.read_csv(str(name) + '/ready_to_use' + '/train.csv')
+            testset = pd.read_csv(str(name) + '/ready_to_use' + '/test.csv')
             trainset = traite_train_test(trainset)
             testset = traite_train_test(testset)
             hehe_test = trainset.copy()
